@@ -60,7 +60,7 @@
               </p>
               <p style="text-align:center">
                 <!-- <a href="mailto:jianvora@iitb.com">Email</a> &nbsp/&nbsp -->
-                <a href="data/CV.pdf">CV</a> &nbsp/&nbsp
+                <a href="data/CV_JianV.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://github.com/jianvora">Github</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/jian-vora-443525164/">LinkedIn</a> &nbsp/&nbsp
                 <a href="https://twitter.com/jian_vora">Twitter</a>
@@ -99,7 +99,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-              	I am broadly interested in the mathematical foundations of machine learning. More specifically, I am interested in statistical machine learning, probabilistic modeling, representation learning, and non-convex optimization. The interplay of probabilitym statistics, and algorithms to answer questions like robustness, explainability and fairness in AI is exciting. Check out these amazing blogs to read more about the above areas -  <a href="http://www.offconvex.org/">Off the Convex Path</a> and <a href="https://blog.ml.cmu.edu/#/">ML@CMU</a>.
+              	I am broadly interested in the mathematical foundations of machine learning. More specifically, I am interested in statistical machine learning, probabilistic modeling, representation learning, and non-convex optimization. The interplay of probability, statistics, and algorithms to answer questions like robustness, explainability and fairness in AI is exciting. Check out these amazing blogs to read more about the above areas -  <a href="http://www.offconvex.org/">Off the Convex Path</a> and <a href="https://blog.ml.cmu.edu/#/">ML@CMU</a>.
               </p>
             </td>
           </tr>
@@ -129,8 +129,10 @@
               <br>
               Guide: <a href="https://www.cse.iitb.ac.in/~ajitvr/">Prof. Ajit Rajwade</a>, <a href="https://www.cse.iitb.ac.in/">Department of Computer Science</a>, <a href="https://www.iitb.ac.in/">IIT Bombay </a> <br>
           		
-              <a href="data/BTP_Stage1_report.pdf">Report</a> &nbsp/&nbsp
-              <a href="data/BTP_Slides.pdf">Slides</a>           
+              <a href="data/SSP_Paper.pdf">Paper</a> &nbsp/&nbsp
+              <a href="data/BTP_Thesis.pdf">Thesis</a>   
+              <a href="data/BTP_Slides.pdf">Slides</a>     
+              <strong> IEEE SSP 2021 </strong>     
               <p>
               	Random Variables in real-world data are reasonably (in)dependent which induces a low-rank on the joint probability tensor and it thus follows the canonical polyadic decomposition. We can then use this prior to estimate the joint density function from just 1-D marginals in the Radon Space by taking random projections of the data.
               </p>
@@ -259,7 +261,8 @@ Prediction of Election Results</papertitle>
               <br>
               Guide: <a href="https://www.cse.iitb.ac.in/~shivaram/">Prof. Shivaram Kalyankrishnan</a>, <a href="https://www.cse.iitb.ac.in/">Department of Computer Science, IIT Bombay</a><br>
           		
-              <a href="data/Vote_Project_Proposal.pdf">Research Proposal</a> 
+              <a href="data/Neurips.pdf">Paper</a>
+              <strong>Under submission at Neurips 2021</strong>> 
              <p></p>
               <p>
 Predicting the winner of an election from limited
@@ -345,7 +348,6 @@ object doing the action. This work uses a pipeline of object detection, tracking
               Course: Advanced Machine Learning, Prof. Amit Sethi<br>
           		
               <a href="data/EE782_StyleGAN.pdf">Report</a> &nbsp/&nbsp
-              <a href="https://actev.nist.gov/trecvid19">Code</a> 
              <p></p>
               <p>
               	We modify the current StyleGAN architecture to incorporate class conditioning. We then use StyleGAN for style transfer in audio signals by converting them into time-frequency plots called mel spectrograms. It is tested on the Speech Commands dataset both in the unconditional and conditional settings.
@@ -353,7 +355,41 @@ object doing the action. This work uses a pipeline of object detection, tracking
             </td>
           </tr> 
 
-          <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+            <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dualrefl_image'>
+                  <img src='images/asr.jpef' width="160" ></div>
+                <img src='images/asr.jpeg' width="160" >
+              </div>
+              <script type="text/javascript">
+                function dualrefl_start() {
+                  document.getElementById('dualrefl_image').style.opacity = "1";
+                }
+
+                function dualrefl_stop() {
+                  document.getElementById('dualrefl_image').style.opacity = "0";
+                }
+                dualrefl_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Efficient Continual Learning for Keyword Spotting</papertitle>
+              <br>
+              Course: Automatic Speech Recognition, Prof. Preethi Jyothi<br>
+          		
+              <a href="data/ASR_Report.pdf">Report</a> &nbsp/&nbsp
+              <a href="https://github.com/jianvora/Continual_Learning_for_KWS">Code</a> 
+
+             <p></p>
+              <p>
+We consider the task of continual batch learning for keyword spotting networks, where at each time step we only have access to the current speech data but none of the older data for training. In this setting, we propose a time-efficient solution to ensure that the speech model performance on older training datasets doesn't deteriorate as newer data keeps on coming.
+              	 </p>
+            </td>
+          </tr> 
+
+
+<!--           <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='dualrefl_image'>
@@ -378,6 +414,7 @@ object doing the action. This work uses a pipeline of object detection, tracking
           		
               <a href="data/EE782_StyleGAN.pdf">Report</a> &nbsp/&nbsp
               <a href="https://actev.nist.gov/trecvid19">Code</a> 
+
              <p></p>
               <p>
               	Modelled a 2D maze as an MDP with appropriate states, actions, rewards and transition probabilities and found the optimal policy using Howard’s Policy Iteration, Value Iteration and Linear Programming.
@@ -385,7 +422,7 @@ object doing the action. This work uses a pipeline of object detection, tracking
               	 </p>
             </td>
           </tr> 
-
+ -->
           <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -409,8 +446,9 @@ object doing the action. This work uses a pipeline of object detection, tracking
               <br>
               Course: Digital Image Processing, Prof. Suyash Awate<br>
           		
-              <a href="data/EE782_StyleGAN.pdf">Report</a> &nbsp/&nbsp
+           <!--    <a href="data/EE782_StyleGAN.pdf">Report</a> &nbsp/&nbsp
               <a href="https://actev.nist.gov/trecvid19">Code</a> 
+            -->   
              <p></p>
               <p>
               	Extracted Iris from a the dataset of eyes and converted them to normalized images using the rubber sheet model. The final images were classified using Principal Component Analysis followed by Linear Discriminant Analysis.
