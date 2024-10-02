@@ -1,0 +1,173 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input section styling */
+.input-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#place-input {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ced4da;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+}
+
+#place-input:focus {
+    border-color: #80bdff;
+}
+
+#add-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ced4da;
+    border-left: none;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+}
+
+#add-button:hover {
+    background-color: #218838;
+}
+
+/* Place list styling */
+#place-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#place-list li {
+    background-color: #e9ecef;
+    margin: 6px 0;
+    padding: 12px;
+    font-size: 18px;
+    position: relative;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#place-list li:nth-child(odd) {
+    background-color: #dee2e6;
+}
+
+/* Remove button styling */
+#place-list li button {
+    background-color: transparent;
+    color: #dc3545;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#place-list li button:hover {
+    color: #c82333;
+}
+
+/* Spin button styling */
+#spin-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#spin-button:hover {
+    background-color: #0069d9;
+}
+
+/* Spinner container */
+#spinner-container {
+    margin: 30px auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+/* Spinner styling */
+#spinner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #007bff;
+    animation: spin 0s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1080deg);
+    }
+}
+
+/* Result styling */
+#result {
+    font-size: 26px;
+    margin-top: 20px;
+    color: #28a745;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    #place-input {
+        width: 60%;
+    }
+
+    #add-button {
+        width: 40%;
+    }
+
+    #spin-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
